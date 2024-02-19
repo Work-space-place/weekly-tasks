@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+
+<main> 
+    <h1> Book a vacation</h1>
+    <form methods = "get" action = "http://www.vacation.com/serverside.py">
+      <p>
+        <lable>Choose Island: <select name = "Choose Island"> 
+          <option value="" >--select one -- </option>
+          <option value="cook">Aitutaki, Cook Islands</option>
+          <option value ="mal">Maldives</option>
+          <option value ="sab">Saba</option>
+          <option value ="koh">Koh Rong, Cambodia</option>
+        </select></lable>
+      </p>
+    <h3> Dates </h3>
+      <p>Arriving/Departing:
+        <label><input type ="date" name="Arriving">Arriving</label>
+        <label><input type ="date" name="Departing">Departing</label>
+      </p>
+    <h3>Personal Data</h3>
+      <p>
+        <label><i>Name:</i><input type ="text" name="name" value="" size = 17></label>
+        <label><i>Surname:</i><input type ="text" name="surname" value="" size = 17></label>
+      </p>
+    <h3>Adress</h3>
+     <p> 
+        <label> Adress:<input type="text" name ="adress" value="" size = 18></label>
+     </p>
+     <p> 
+        <label> City:<input type="text" name ="city" value="" size = 18></label>
+     </p>
+    <p>State: 
+       <label>State: <select name = "State">
+        <option value ="" >--select one-- </option>
+        <option value ="ru" >Russia</option>
+        <option value ="it"> Italy</option>
+        <option value ="jp"> Japan</option>
+        <option value ="be"> Belgium</option>
+        <option value ="ro">Romania</option>
+        <option value ="fr"> France</option>
+       </select></label>
+    <p>Zip:
+        <label> <input type= "text" name="zip" value="" size = 16></label>
+    </p>
+    <p> Remember me: 
+        <label><input type= "checkbox" name="remember me" size = 16></label>
+    </p>
+    <p><input type=submit name="submit" value = "Book your vacation"> 
+        <input type=reset name="cancel" value= "Cancel">
+    </p>
+    </form>
+</main>
